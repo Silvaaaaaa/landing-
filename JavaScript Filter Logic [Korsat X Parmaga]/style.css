@@ -1,0 +1,58 @@
+/* =========== Globals ========= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* ==================== Filter ================ */
+.filter-btns {
+  max-width: fit-content;
+  margin: 1rem auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  padding: 0.3rem;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+}
+.filter-btn:hover {
+  background: blueviolet;
+  cursor: pointer;
+}
+.filter-btn.active {
+  background: blueviolet;
+  color: white;
+}
+
+.filter-items {
+  margin: auto;
+  max-width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.filter-item {
+  background: #333;
+  color: whitesmoke;
+  font-size: larger;
+  border-radius: 10px;
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding-top: 50%;
+}

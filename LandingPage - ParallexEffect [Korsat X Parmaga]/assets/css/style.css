@@ -1,0 +1,168 @@
+/* Google Font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ======== GLOBALS =========== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -------- VARIABLES -------- */
+:root{
+    --main-color: #92141a;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* ############################################ */
+/* ========== Header ========== */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo{
+    font-size: 1.7em;
+    font-weight: 700;
+    color: var(--main-color);
+}
+header .logo:hover{
+    color: #cc141e;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header li{
+    margin-left: 20px;
+}
+header li a{
+    padding: 6px 15px;
+    color: var(--main-color);
+    border-radius: 20px;
+    transition: .3s;
+}
+header li a:hover,
+header li a.active{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* =============== Section =================  */
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section #text{
+    font-size: 10vw;
+    position: absolute;
+    color: var(--main-color);
+    text-align: center;
+    line-height: .55em;
+    font-family: "Rancho", cursive;
+    transform: translateY(-50%);
+}
+section #text span{
+    font-size: .2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+section #btn{
+    display: inline-block;
+    padding: 8px 30px;
+    color: var(--main-color);
+    background-color: #fff;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    font-weight: 500;
+    transform: translateY(100px);
+    transition: .5s;
+}
+section #btn:hover{
+    box-shadow: inset 0 0 60px rgb(245, 245, 245),
+    inset 20px 0 80px rgb(238, 255, 0),
+    inset -20px 0 80px rgb(255, 186, 159),
+    inset 20px 0 300px rgb(206, 255, 93),
+    inset -20px 0 300px rgb(255, 102, 0),
+    0 0 50px #fff,
+    -10px 0 80px rgb(255, 166, 0),
+    10px 0 80px rgb(255, 51, 0);
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, var(--main-color), transparent);
+    z-index: 10;
+}
+
+#background{
+    z-index: -1;
+}
+#rocks{
+    filter: hue-rotate(343deg);
+}
+#water{
+    filter: hue-rotate(178deg);
+}
+
+/* ============= Article ============ */
+article{
+    position: relative;
+    background-color: var(--main-color);
+    padding: 30px;
+    color: #fff;
+}
+article h2{
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+article p{
+    line-height: 1.7;
+}
+
+/* ============== Scroll bar ============== */
+::-webkit-scrollbar{
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
